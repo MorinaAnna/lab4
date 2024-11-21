@@ -274,59 +274,122 @@ footer ul li a {
 }
 
 /* Мобільна версія (ширина менше ніж 768px) */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+    /* Логотип і назва магазину */
+    .logo {
+        display: flex;
+        flex-direction: row; /* Розташування в один рядок */
+        align-items: center; /* Вирівнювання по вертикалі */
+        justify-content: flex-start; /* Логотип і назва поруч */
+        width: 100%;
+        padding: 10px 20px; /* Відступи */
+    }
+
+    .logo img {
+        height: 40px; /* Розмір логотипу */
+        margin-right: 10px; /* Відступ між логотипом і назвою */
+    }
+
+    .site-name {
+        font-family: 'Boomboom', sans-serif; /* Шрифт Boomboom */
+        font-size: 18px; /* Розмір тексту назви сайту */
+        text-shadow: none; /* Забираємо тіні для читабельності */
+        color: #fff; /* Білий текст */
+    }
+
+    /* Меню навігації */
     .nav-links {
+        display: flex;
         flex-direction: column; /* Вертикальне меню */
-        margin-left: 0; 
-        align-items: flex-start; /* Вирівнюємо по лівому краю */
+        align-items: flex-start; /* Вирівнювання по лівому краю */
+        width: 100%;
+        margin: 10px 0; /* Відступи зверху і знизу */
+        font-family: 'Rubik Mono One', sans-serif; /* Шрифт для меню */
+        font-size: 12px; /* Розмір тексту пунктів меню */
     }
 
     .nav-links li {
-        margin: 10px 0; /* Відступи між пунктами меню */
+        margin: 8px 0; /* Зменшені відступи між пунктами меню */
     }
 
+    .nav-links a {
+        color: #fff; /* Білий текст */
+        text-decoration: none; /* Без підкреслення */
+        font-size: 12px; /* Розмір тексту в посиланнях */
+    }
+
+    /* Пошуковий блок */
     .search-container {
-        flex-direction: column; /* Вертикальне розташування елементів пошуку */
-        align-items: flex-start; 
-        margin-top: 10px; 
+        display: flex;
+        flex-direction: row; /* В один рядок */
+        justify-content: space-between; /* Вирівнювання елементів */
+        align-items: center; /* Центрування по вертикалі */
+        width: 100%;
+        margin: 10px 0; /* Відступи зверху і знизу */
+        padding: 0 20px; /* Відступи з боків */
     }
 
     #searchInput {
-        width: 100%; /* Ширина пошукового поля на всю ширину */
-        margin-bottom: 5px; 
+        width: 70%; /* Поле пошуку займає 70% ширини */
+        font-size: 12px; /* Розмір тексту пошуку */
+        padding: 8px; /* Відступи всередині поля */
+        margin-right: 10px; /* Відступ між полем і кнопкою */
+        border-radius: 5px; /* Округлення країв */
+        border: none; /* Без рамки */
     }
 
+    #searchButton {
+        width: 20%; /* Кнопка пошуку займає 20% ширини */
+        font-size: 12px; /* Розмір тексту кнопки */
+        padding: 8px;
+        background-color: #FF0080; /* Колір збережено */
+        color: #fff; /* Білий текст */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #searchButton:hover {
+        background-color: #d60068; /* Ефект hover */
+    }
+
+    /* Герой-секція */
     .hero-text h1 {
-        font-size: 20px; /* Менший заголовок для мобільних */
+        font-family: 'Boomboom', sans-serif; /* Шрифт збережено */
+        font-size: 24px; /* Розмір тексту */
+        text-shadow: none; /* Забираємо тіні */
+        margin-bottom: 10px;
     }
 
     .hero-text p {
-        font-size: 14px; /* Менший підзаголовок для мобільних */
-    }
-
-    .registration-form {
-        width: 95%; /* Збільшуємо ширину форми на мобільних пристроях */
+        font-family: 'Rubik Mono One', sans-serif; /* Збереження шрифту */
+        font-size: 14px; /* Зменшений розмір тексту */
+        margin-bottom: 10px;
     }
 
     .cta-button {
-        font-size: 18px; /* Менший шрифт для кнопки */
+        font-family: 'Rubik Mono One', sans-serif; /* Збереження шрифту */
+        font-size: 18px; /* Розмір тексту кнопки */
+        padding: 10px 20px; /* Відступи */
+        background-color: #00CCFF; /* Збереження кольору */
+        color: #fff; /* Білий текст */
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        text-transform: uppercase; /* Великі літери */
     }
-}
-.nested-list {
-    margin-top: 20px;
-}
 
-.nested-list ul {
-    list-style-type: none;
-    padding-left: 0;
-}
+    .cta-button:hover {
+        background-color: #0099CC; /* Ефект hover */
+    }
 
-.color-swatch {
-    display: inline-block;
-    width: 24px; /* Ширина круга */
-    height: 24px; /* Висота круга */
-    border-radius: 50%; /* Зробити коло */
-    margin-right: 8px; /* Відстань між кольоровим кругом і текстом */
-    background-size: cover; /* Щоб зображення покривало весь круг */
-    background-position: center; /* Центрування зображення */
+    /* Реєстраційна форма */
+    .registration-form {
+        width: 95%; /* Ширина форми */
+        margin: 15px auto; /* Центрування */
+    }
+
+    .registration-form input {
+        font-size: 14px; /* Зменшений розмір тексту */
+    }
 }
