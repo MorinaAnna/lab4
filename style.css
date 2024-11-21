@@ -275,58 +275,103 @@ footer ul li a {
 
 /* Мобільна версія (ширина менше ніж 768px) */
 @media (max-width: 767px) {
+    /* Меню навігації */
     .nav-links {
         flex-direction: column; /* Вертикальне меню */
-        margin-left: 0; 
-        align-items: flex-start; /* Вирівнюємо по лівому краю */
+        margin-left: 0;
+        align-items: center; /* Центруємо меню */
+        text-align: center; /* Вирівнюємо текст */
     }
 
     .nav-links li {
-        margin: 10px 0; /* Відступи між пунктами меню */
+        margin: 8px 0; /* Зменшуємо відступи між пунктами меню */
     }
 
+    /* Пошуковий блок */
     .search-container {
         flex-direction: column; /* Вертикальне розташування елементів пошуку */
-        align-items: flex-start; 
-        margin-top: 10px; 
+        align-items: center; /* Центруємо блок пошуку */
+        margin-top: 10px;
     }
 
     #searchInput {
-        width: 100%; /* Ширина пошукового поля на всю ширину */
-        margin-bottom: 10px; 
+        width: 90%; /* Пошукове поле займає 90% ширини */
+        margin-bottom: 10px;
+        font-size: 14px; /* Зменшуємо розмір тексту */
+        padding: 10px;
     }
 
+    #searchButton {
+        width: 50%; /* Зменшуємо ширину кнопки */
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Герой-секція */
     .hero-text h1 {
-        font-size: 24px; /* Менший заголовок для мобільних */
+        font-size: 20px; /* Зменшуємо розмір заголовка */
+        margin: 5px 0;
     }
 
     .hero-text p {
-        font-size: 14px; /* Менший підзаголовок для мобільних */
-    }
-
-    .registration-form {
-        width: 95%; /* Збільшуємо ширину форми на мобільних пристроях */
+        font-size: 14px; /* Зменшуємо розмір підзаголовка */
+        margin: 5px 0;
     }
 
     .cta-button {
-        font-size: 18px; /* Менший шрифт для кнопки */
+        font-size: 16px; /* Зменшуємо розмір тексту кнопки */
+        padding: 8px 16px;
+        margin-top: 10px;
     }
-}
-.nested-list {
-    margin-top: 20px;
-}
 
-.nested-list ul {
-    list-style-type: none;
-    padding-left: 0;
-}
+    /* Форма реєстрації */
+    .registration-form {
+        width: 90%; /* Робимо форму ширшою для мобільних пристроїв */
+        margin: 15px auto;
+        padding: 15px;
+    }
 
-.color-swatch {
-    display: inline-block;
-    width: 24px; /* Ширина круга */
-    height: 24px; /* Висота круга */
-    border-radius: 50%; /* Зробити коло */
-    margin-right: 8px; /* Відстань між кольоровим кругом і текстом */
-    background-size: cover; /* Щоб зображення покривало весь круг */
-    background-position: center; /* Центрування зображення */
+    .styled-form input[type="text"],
+    .styled-form input[type="email"],
+    .styled-form input[type="password"] {
+        font-size: 14px; /* Компактні поля вводу */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .styled-form input[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Список кольорів */
+    .nested-list {
+        margin-top: 15px;
+    }
+
+    .nested-list ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .color-swatch {
+        display: inline-block;
+        width: 20px; /* Менший розмір круга */
+        height: 20px;
+        border-radius: 50%; /* Робимо коло */
+        margin-right: 6px; /* Зменшуємо відстань між кругом і текстом */
+        background-size: cover; /* Покриття круга зображенням */
+        background-position: center; /* Центрування зображення */
+    }
+
+    /* Футер */
+    footer ul {
+        flex-direction: column; /* Вертикальне розташування пунктів футера */
+        align-items: center; /* Центруємо текст */
+        text-align: center;
+    }
+
+    footer ul li {
+        margin: 8px 0; /* Зменшуємо відступи між пунктами футера */
+    }
 }
