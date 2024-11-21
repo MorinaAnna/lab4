@@ -275,25 +275,25 @@ footer ul li a {
 
 /* Мобільна версія (ширина менше ніж 768px) */
 @media (max-width: 767px) {
-    /* Верхній блок: Логотип і назва магазину */
+    /* Логотип і назва магазину */
     .logo {
         display: flex;
         flex-direction: row; /* Розташування в один рядок */
         align-items: center; /* Вирівнювання по вертикалі */
-        justify-content: space-between; /* Логотип зліва, назва праворуч */
+        justify-content: flex-start; /* Логотип і назва поруч */
         width: 100%;
-        padding: 10px; /* Відступи для кращого вигляду */
+        padding: 10px 20px; /* Відступи */
     }
 
     .logo img {
-        height: 50px; /* Збереження розміру логотипу */
+        height: 40px; /* Зменшений розмір логотипу */
+        margin-right: 10px; /* Відступ між логотипом і назвою */
     }
 
     .site-name {
-        font-family: 'Boomboom', sans-serif; /* Шрифт збережено */
-        font-size: 43px; /* Розмір тексту збережено */
-        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* Стиль тексту */
-        margin-left: 10px; /* Відступ між логотипом і текстом */
+        font-family: 'Boomboom', sans-serif; /* Збереження шрифту */
+        font-size: 30px; /* Зменшений розмір тексту */
+        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* Збереження стилю */
     }
 
     /* Меню навігації */
@@ -301,14 +301,17 @@ footer ul li a {
         display: flex;
         flex-direction: row; /* Горизонтальне меню */
         justify-content: space-around; /* Рівномірний розподіл пунктів */
+        align-items: center;
         width: 100%;
-        margin: 10px 0; /* Відступ зверху і знизу */
+        margin: 10px 0; /* Відступи зверху і знизу */
+        padding: 10px 0;
         font-family: 'Rubik Mono One', sans-serif; /* Збереження шрифту */
-        font-size: 18px; /* Розмір тексту збережено */
+        font-size: 14px; /* Зменшений розмір тексту */
+        background-color: #000; /* Чорний фон для чіткості */
     }
 
     .nav-links a {
-        color: #fff; /* Колір тексту */
+        color: #fff; /* Білий текст */
         text-decoration: none; /* Без підкреслення */
     }
 
@@ -316,16 +319,17 @@ footer ul li a {
     .search-container {
         display: flex;
         flex-direction: row; /* В один рядок */
-        justify-content: center; /* Центрування пошукового блоку */
-        align-items: center; /* Вирівнювання елементів по вертикалі */
+        justify-content: center; /* Центрування блоку */
+        align-items: center; /* Вирівнювання по вертикалі */
         width: 100%;
         margin: 10px 0; /* Відступи зверху і знизу */
+        padding: 0 20px; /* Відступи з боків */
     }
 
     #searchInput {
         width: 70%; /* Поле пошуку займає 70% ширини */
-        font-size: 16px; /* Розмір тексту збережено */
-        padding: 10px; /* Відступи всередині поля */
+        font-size: 14px; /* Розмір тексту */
+        padding: 8px; /* Відступи всередині поля */
         margin-right: 10px; /* Відступ між полем і кнопкою */
         border-radius: 5px; /* Округлення країв */
         border: none; /* Без рамки */
@@ -333,9 +337,9 @@ footer ul li a {
 
     #searchButton {
         width: 20%; /* Кнопка пошуку займає 20% ширини */
-        font-size: 16px; /* Розмір тексту збережено */
-        padding: 10px;
-        background-color: #FF0080; /* Колір збережено */
+        font-size: 14px; /* Розмір тексту */
+        padding: 8px;
+        background-color: #FF0080; /* Збереження кольору */
         color: #fff; /* Білий текст */
         border: none;
         border-radius: 5px;
@@ -354,28 +358,28 @@ footer ul li a {
 
     .hero-text h1 {
         font-family: 'Boomboom', sans-serif; /* Збереження шрифту */
-        font-size: 43px; /* Розмір тексту збережено */
+        font-size: 36px; /* Розмір тексту */
         text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* Стиль тексту */
         margin-bottom: 10px;
     }
 
     .hero-text p {
         font-family: 'Rubik Mono One', sans-serif; /* Збереження шрифту */
-        font-size: 18px; /* Розмір тексту збережено */
+        font-size: 16px; /* Розмір тексту */
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Стиль тексту */
         margin-bottom: 15px;
     }
 
     .cta-button {
         font-family: 'Rubik Mono One', sans-serif; /* Збереження шрифту */
-        font-size: 20px; /* Розмір тексту збережено */
+        font-size: 18px; /* Зменшений розмір тексту */
         padding: 10px 20px; /* Відступи */
         background-color: #00CCFF; /* Збереження кольору */
         color: #fff; /* Білий текст */
         border: none;
         border-radius: 10px;
         cursor: pointer;
-        text-transform: uppercase; /* Збереження великих літер */
+        text-transform: uppercase; /* Великі літери */
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Стиль тексту */
     }
 
@@ -383,4 +387,3 @@ footer ul li a {
         background-color: #0099CC; /* Ефект hover */
     }
 }
-
