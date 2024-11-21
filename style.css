@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 43px;
+    color: #F0F8FF;
+    margin-left: 10px;
+    font-family: 'Boomboom', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 65px;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#searchInput {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+    max-width: 100%;
+}
+
+#searchButton {
+    padding: 15px;
+    background-color: #FF0080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7);
+}
+
+.hero-text p {
+    font-size: 18px; 
+    margin: 10px 0; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: #00CCFF; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button:hover {
+    background-color: #0099CC; 
+}
+
+main {
+    padding: 20px;
+}
+
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+    width: 90%; 
+}
+
+.registration-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.styled-form label {
+    margin-bottom: 5px;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.styled-form input[type="submit"] {
+    background: #FF0080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.styled-form input[type="submit"]:hover {
+    background-color: #d60068;
+}
+
+.table-section {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #FF0080;
+    color: white;
+}
+
+.nested-list {
+    margin-top: 20px;
+}
+
+.nested-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Десктопна версія (ширина більше ніж 1024px) */
+@media (min-width: 1025px) {
+    .nav-links {
+        justify-content: flex-end; /* Вирівнює меню праворуч */
+    }
+
+    .registration-form {
+        max-width: 500px; /* Ширина для десктопа */
+    }
+
+    .hero-text h1 {
+        font-size: 48px; /* Великий заголовок для десктопа */
+    }
+
+    .hero-text p {
+        font-size: 22px; /* Великий підзаголовок для десктопа */
+    }
+}
+
+/* Планшетна версія (ширина від 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-links {
+        flex-direction: row; /* Горизонтальне меню */
+        margin-left: 0; 
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Зменшуємо відступи між пунктами меню */
+    }
+
+    .registration-form {
+        max-width: 90%; /* Збільшуємо ширину на планшетах */
+    }
+
+    .hero-text h1 {
+        font-size: 36px; /* Заголовок для планшета */
+    }
+
+    .hero-text p {
+        font-size: 18px; /* Підзаголовок для планшета */
+    }
+}
+
+/* Мобільна версія (ширина менше ніж 768px) */
+@media (max-width: 767px) {
+    .nav-links {
+        flex-direction: column; /* Вертикальне меню */
+        margin-left: 0; 
+        align-items: flex-start; /* Вирівнюємо по лівому краю */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Відступи між пунктами меню */
+    }
+
+    .search-container {
+        flex-direction: column; /* Вертикальне розташування елементів пошуку */
+        align-items: flex-start; 
+        margin-top: 10px; 
+    }
+
+    #searchInput {
+        width: 100%; /* Ширина пошукового поля на всю ширину */
+        margin-bottom: 10px; 
+    }
+
+    .hero-text h1 {
+        font-size: 24px; /* Менший заголовок для мобільних */
+    }
+
+    .hero-text p {
+        font-size: 14px; /* Менший підзаголовок для мобільних */
+    }
+
+    .registration-form {
+        width: 95%; /* Збільшуємо ширину форми на мобільних пристроях */
+    }
+
+    .cta-button {
+        font-size: 18px; /* Менший шрифт для кнопки */
+    }
+}
+.nested-list {
+    margin-top: 20px;
+}
+
+.nested-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 24px; /* Ширина круга */
+    height: 24px; /* Висота круга */
+    border-radius: 50%; /* Зробити коло */
+    margin-right: 8px; /* Відстань між кольоровим кругом і текстом */
+    background-size: cover; /* Щоб зображення покривало весь круг */
+    background-position: center; /* Центрування зображення */
+}
+/* Базові стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+/* Основні стилі */
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.registration-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Адаптивні стилі */
+
+/* Десктопна версія */
+@media (min-width: 1025px) {
+    .nav-links {
+        justify-content: flex-end;
+    }
+    .hero-text h1 {
+        font-size: 48px;
+    }
+    .registration-form {
+        max-width: 600px;
+    }
+}
+
+/* Планшетна версія */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-links {
+        justify-content: space-around;
+    }
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    .registration-form {
+        max-width: 500px;
+    }
+}
+
+/* Мобільна версія */
+@media (max-width: 767px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-text h1 {
+        font-size: 24px;
+    }
+    .registration-form {
+        width: 95%;
+    }
+}
