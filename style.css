@@ -306,7 +306,7 @@ footer ul li a {
         margin: 10px 0; /* Відступ зверху і знизу */
         padding: 0 20px; /* Відступи з боків */
         font-family: 'Rubik Mono One', sans-serif; /* Збереження шрифту */
-        font-size: 14px; /* Зменшений розмір тексту */
+        font-size: 10px; /* Зменшений розмір тексту */
     }
 
     .nav-links li {
@@ -339,7 +339,7 @@ footer ul li a {
 
     #searchButton {
         width: 100%; /* Кнопка пошуку займає всю ширину */
-        font-size: 12px; /* Розмір тексту */
+        font-size: 25px; /* Розмір тексту */
         padding: 8px;
         background-color: #FF0080; /* Колір збережено */
         color: #fff; /* Білий текст */
