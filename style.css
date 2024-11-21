@@ -286,13 +286,13 @@ footer ul li a {
     }
 
     .logo img {
-        height: 20px; /* Зменшений розмір логотипу */
+        height: 32px; /* Зменшений розмір логотипу */
         margin-right: 10px; /* Відступ між логотипом і назвою */
     }
 
     .site-name {
         font-family: 'Boomboom', sans-serif; /* Задаємо шрифт Boomboom */
-        font-size: 18px; /* Зменшений розмір тексту */
+        font-size: 22px; /* Зменшений розмір тексту */
         text-shadow: none; /* Прибираємо тіні для читабельності */
         color: #fff; /* Білий колір тексту */
     }
@@ -339,7 +339,7 @@ footer ul li a {
 
     #searchButton {
         width: 100%; /* Кнопка пошуку займає всю ширину */
-        font-size: 14px; /* Розмір тексту */
+        font-size: 12px; /* Розмір тексту */
         padding: 8px;
         background-color: #FF0080; /* Колір збережено */
         color: #fff; /* Білий текст */
