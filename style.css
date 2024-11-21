@@ -286,13 +286,13 @@ footer ul li a {
     }
 
     .logo img {
-        height: 40px; /* Зменшений розмір логотипу */
+        height: 20px; /* Зменшений розмір логотипу */
         margin-right: 10px; /* Відступ між логотипом і назвою */
     }
 
     .site-name {
         font-family: 'Boomboom', sans-serif; /* Задаємо шрифт Boomboom */
-        font-size: 25px; /* Зменшений розмір тексту */
+        font-size: 18px; /* Зменшений розмір тексту */
         text-shadow: none; /* Прибираємо тіні для читабельності */
         color: #fff; /* Білий колір тексту */
     }
