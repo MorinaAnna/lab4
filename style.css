@@ -275,103 +275,71 @@ footer ul li a {
 
 /* Мобільна версія (ширина менше ніж 768px) */
 @media (max-width: 767px) {
-    /* Меню навігації */
-    .nav-links {
-        flex-direction: column; /* Вертикальне меню */
-        margin-left: 0;
-        align-items: center; /* Центруємо меню */
+    /* Логотип і заголовок */
+    .logo {
+        flex-direction: column; /* Розташування логотипу та назви у вертикальну лінію */
+        align-items: center; /* Центруємо їх */
         text-align: center; /* Вирівнюємо текст */
     }
 
+    .site-name {
+        font-size: 18px; /* Зменшуємо розмір тексту назви магазину */
+        margin-top: 5px;
+    }
+
+    /* Меню навігації */
+    .nav-links {
+        flex-direction: column; /* Вертикальне меню */
+        align-items: center; /* Центруємо пункти меню */
+        text-align: center;
+    }
+
     .nav-links li {
-        margin: 8px 0; /* Зменшуємо відступи між пунктами меню */
+        margin: 8px 0; /* Менші відступи між пунктами меню */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Зменшуємо розмір шрифту пунктів меню */
     }
 
     /* Пошуковий блок */
     .search-container {
-        flex-direction: column; /* Вертикальне розташування елементів пошуку */
-        align-items: center; /* Центруємо блок пошуку */
+        flex-direction: column; /* Розташування елементів пошуку у вертикальну лінію */
+        align-items: center; /* Центруємо пошуковий блок */
         margin-top: 10px;
     }
 
     #searchInput {
-        width: 90%; /* Пошукове поле займає 90% ширини */
-        margin-bottom: 10px;
+        width: 80%; /* Ширина поля пошуку */
         font-size: 14px; /* Зменшуємо розмір тексту */
-        padding: 10px;
+        padding: 8px;
+        margin-bottom: 8px;
     }
 
     #searchButton {
-        width: 50%; /* Зменшуємо ширину кнопки */
+        width: 50%; /* Зменшуємо розмір кнопки пошуку */
         font-size: 14px;
-        padding: 10px;
+        padding: 8px;
     }
 
     /* Герой-секція */
+    .hero-section {
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .hero-text h1 {
-        font-size: 20px; /* Зменшуємо розмір заголовка */
-        margin: 5px 0;
-    }
-
-    .hero-text p {
-        font-size: 14px; /* Зменшуємо розмір підзаголовка */
-        margin: 5px 0;
-    }
-
-    .cta-button {
-        font-size: 16px; /* Зменшуємо розмір тексту кнопки */
-        padding: 8px 16px;
-        margin-top: 10px;
-    }
-
-    /* Форма реєстрації */
-    .registration-form {
-        width: 90%; /* Робимо форму ширшою для мобільних пристроїв */
-        margin: 15px auto;
-        padding: 15px;
-    }
-
-    .styled-form input[type="text"],
-    .styled-form input[type="email"],
-    .styled-form input[type="password"] {
-        font-size: 14px; /* Компактні поля вводу */
-        padding: 10px;
+        font-size: 20px; /* Менший заголовок */
         margin-bottom: 10px;
     }
 
-    .styled-form input[type="submit"] {
-        font-size: 16px;
-        padding: 12px;
+    .hero-text p {
+        font-size: 14px; /* Менший текст підзаголовка */
+        margin-bottom: 15px;
     }
 
-    /* Список кольорів */
-    .nested-list {
-        margin-top: 15px;
-    }
-
-    .nested-list ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .color-swatch {
-        display: inline-block;
-        width: 20px; /* Менший розмір круга */
-        height: 20px;
-        border-radius: 50%; /* Робимо коло */
-        margin-right: 6px; /* Зменшуємо відстань між кругом і текстом */
-        background-size: cover; /* Покриття круга зображенням */
-        background-position: center; /* Центрування зображення */
-    }
-
-    /* Футер */
-    footer ul {
-        flex-direction: column; /* Вертикальне розташування пунктів футера */
-        align-items: center; /* Центруємо текст */
-        text-align: center;
-    }
-
-    footer ul li {
-        margin: 8px 0; /* Зменшуємо відступи між пунктами футера */
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
