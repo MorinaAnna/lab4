@@ -275,71 +275,110 @@ footer ul li a {
 
 /* Мобільна версія (ширина менше ніж 768px) */
 @media (max-width: 767px) {
-    /* Логотип і заголовок */
+    /* Логотип і назва магазину */
     .logo {
-        flex-direction: column; /* Розташування логотипу та назви у вертикальну лінію */
-        align-items: center; /* Центруємо їх */
-        text-align: center; /* Вирівнюємо текст */
+        display: flex;
+        flex-direction: row; /* Розташування в один рядок */
+        align-items: center; /* Вирівнюємо по вертикалі */
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 50px; /* Розмір логотипу */
     }
 
     .site-name {
-        font-size: 18px; /* Зменшуємо розмір тексту назви магазину */
-        margin-top: 5px;
+        font-family: 'Boomboom', sans-serif; /* Зберігаємо шрифт */
+        font-size: 43px; /* Розмір тексту для мобільної версії */
+        margin-left: 10px; /* Відступ між логотипом і назвою */
+        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* Зберігаємо стиль тексту */
     }
 
     /* Меню навігації */
     .nav-links {
-        flex-direction: column; /* Вертикальне меню */
-        align-items: center; /* Центруємо пункти меню */
-        text-align: center;
-    }
-
-    .nav-links li {
-        margin: 8px 0; /* Менші відступи між пунктами меню */
+        display: flex;
+        flex-direction: row; /* В один рядок */
+        justify-content: space-around; /* Рівномірний розподіл пунктів */
+        width: 100%;
+        margin: 10px 0; /* Відступ зверху та знизу */
+        font-family: 'Rubik Mono One', sans-serif; /* Зберігаємо шрифт */
+        font-size: 18px; /* Розмір тексту */
     }
 
     .nav-links a {
-        font-size: 14px; /* Зменшуємо розмір шрифту пунктів меню */
+        color: #fff; /* Зберігаємо колір */
+        text-decoration: none; /* Зберігаємо відсутність підкреслення */
     }
 
     /* Пошуковий блок */
     .search-container {
-        flex-direction: column; /* Розташування елементів пошуку у вертикальну лінію */
-        align-items: center; /* Центруємо пошуковий блок */
-        margin-top: 10px;
+        display: flex;
+        flex-direction: row; /* В один рядок */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0; /* Відступ зверху та знизу */
     }
 
     #searchInput {
-        width: 80%; /* Ширина поля пошуку */
-        font-size: 14px; /* Зменшуємо розмір тексту */
-        padding: 8px;
-        margin-bottom: 8px;
+        width: 70%; /* Поле пошуку займає 70% ширини */
+        font-size: 16px; /* Зберігаємо розмір тексту */
+        padding: 10px; /* Відступи всередині поля */
+        margin-right: 10px; /* Відступ між полем і кнопкою */
+        border-radius: 5px; /* Зберігаємо стиль рамки */
+        border: none; /* Забираємо стандартну рамку */
     }
 
     #searchButton {
-        width: 50%; /* Зменшуємо розмір кнопки пошуку */
-        font-size: 14px;
-        padding: 8px;
+        width: 20%; /* Кнопка займає 20% ширини */
+        font-size: 16px; /* Зберігаємо розмір тексту */
+        padding: 10px;
+        background-color: #FF0080; /* Зберігаємо кольори */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #searchButton:hover {
+        background-color: #d60068; /* Зберігаємо ефект ховера */
     }
 
     /* Герой-секція */
     .hero-section {
-        text-align: center;
+        text-align: center; /* Центруємо текст */
         margin-top: 20px;
     }
 
     .hero-text h1 {
-        font-size: 20px; /* Менший заголовок */
+        font-family: 'Boomboom', sans-serif; /* Зберігаємо шрифт */
+        font-size: 43px; /* Зберігаємо розмір тексту */
+        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* Зберігаємо стиль тексту */
         margin-bottom: 10px;
     }
 
     .hero-text p {
-        font-size: 14px; /* Менший текст підзаголовка */
+        font-family: 'Rubik Mono One', sans-serif; /* Зберігаємо шрифт */
+        font-size: 18px; /* Зберігаємо розмір тексту */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Зберігаємо стиль тексту */
         margin-bottom: 15px;
     }
 
     .cta-button {
-        font-size: 14px;
-        padding: 8px 16px;
+        font-family: 'Rubik Mono One', sans-serif; /* Зберігаємо шрифт */
+        font-size: 20px; /* Зберігаємо розмір тексту */
+        padding: 10px 20px; /* Відступи всередині кнопки */
+        background-color: #00CCFF; /* Зберігаємо кольори */
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        text-transform: uppercase; /* Зберігаємо трансформацію тексту */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Зберігаємо стиль тексту */
+    }
+
+    .cta-button:hover {
+        background-color: #0099CC; /* Зберігаємо ефект ховера */
     }
 }
