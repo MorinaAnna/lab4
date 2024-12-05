@@ -275,11 +275,12 @@ footer ul li a {
 
 /* Мобільна версія (ширина менше ніж 768px) */
 @media (max-width: 767px) {
-    
+
     .site-name {
-        font-family: 'Boomboom', sans-serif;
         font-size: 30px; /* Розмір шрифту для мобільних */
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Можна налаштувати тіні */
+       font-family: 'Boomboom', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7);
+    
     }
     .nav-links {
         flex-direction: column; /* Вертикальне меню */
