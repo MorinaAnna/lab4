@@ -277,97 +277,80 @@ footer ul li a {
 @media (max-width: 767px) {
     body {
         font-family: 'Rubik Mono One', sans-serif;
-        padding: 0 10px; /* Відступи з боків */
+        padding: 0 10px;
     }
 
-    /* Центруємо логотип */
+    /* Логотип та назва */
     .logo {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        text-align: center;
+        justify-content: flex-start; /* Залишаємо логотип на місці */
     }
 
     .logo img {
         width: 80px; /* Розмір логотипу */
         height: auto;
-        margin-bottom: 5px;
+        margin-right: 10px;
     }
 
     .site-name {
-        font-size: 20px; /* Розмір шрифту */
-        text-align: center;
-        margin: 5px 0;
+        font-size: 20px; /* Розмір шрифту для назви магазину */
+        color: #F0F8FF;
+        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7);
     }
 
-    /* Переробляємо меню */
+    /* Меню (Catalog, Reviews, About Us) */
     .nav-links {
         display: flex;
-        flex-direction: column; /* Вертикальне меню */
-        align-items: center; /* Центруємо елементи меню */
-        gap: 10px; /* Відступи між елементами */
+        justify-content: space-around; /* Елементи в один рядок з рівними відступами */
         margin-top: 10px;
+        list-style-type: none;
+        padding: 0;
     }
 
     .nav-links li {
-        margin: 0; /* Забираємо зайві відступи */
+        margin: 0;
     }
 
     .nav-links a {
-        font-size: 16px; /* Зменшений розмір шрифту */
-        color: #fff;
+        font-size: 14px; /* Зменшений шрифт для пунктів меню */
         text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
     }
 
-    /* Пошукове поле */
+    /* Пошук та корзина */
     .search-container {
         display: flex;
-        flex-direction: column; /* Вертикальне розташування */
-        width: 100%;
+        justify-content: space-between; /* Поле пошуку зліва, корзина справа */
         align-items: center;
-        margin-top: 10px;
+        margin-top: 15px;
+        width: 100%;
     }
 
     #searchInput {
-        width: 90%; /* Ширина поля на всю ширину контейнера */
-        margin-bottom: 5px;
+        width: 70%; /* Поле займає 70% ширини */
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
     }
 
     #searchButton {
-        width: 90%; /* Відповідає ширині поля */
-        padding: 10px;
+        padding: 10px 15px;
+        background-color: #FF0080;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 5px;
+        cursor: pointer;
     }
 
-    /* Блок "Discover Your Style" */
-    .hero-text h1 {
-        font-size: 24px; /* Менший заголовок */
-        text-align: center;
-    }
-
-    .hero-text p {
-        font-size: 14px; /* Менший текст */
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    .cta-button {
-        font-size: 16px;
-        padding: 8px 12px;
-        width: auto;
-        margin: 0 auto;
-    }
-
-    .main-img {
-        width: 100%;
-        max-height: 300px; /* Обмеження висоти */
-        object-fit: cover;
-    }
-
-    /* Корзина */
     .bag-link {
         display: flex;
-        justify-content: center;
-        margin: 10px 0;
+        align-items: center;
+        margin-left: 10px;
     }
 
     .bag-link img {
@@ -375,4 +358,3 @@ footer ul li a {
         height: auto;
     }
 }
-
