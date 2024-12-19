@@ -241,10 +241,7 @@ footer ul li a {
 
 /* Десктопна версія (ширина більше ніж 1024px) */
 @media (min-width: 1025px) {
-    .color-image {
-        width: 70px;
-        height: 70px;
-    }
+   
     .nav-links {
         justify-content: flex-end; /* Вирівнює меню праворуч */
     }
@@ -260,14 +257,15 @@ footer ul li a {
     .hero-text p {
         font-size: 22px; /* Великий підзаголовок для десктопа */
     }
+     .color-image {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 /* Планшетна версія (ширина від 768px до 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-     .color-image {
-        width: 60px;
-        height: 60px;
-    }
+     
     .nav-links {
         flex-direction: row; /* Горизонтальне меню */
         margin-left: 0; 
@@ -287,6 +285,10 @@ footer ul li a {
 
     .hero-text p {
         font-size: 18px; /* Підзаголовок для планшета */
+    }
+    .color-image {
+        width: 60px;
+        height: 60px;
     }
 }
 
