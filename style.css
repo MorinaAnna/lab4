@@ -273,67 +273,105 @@ footer ul li a {
     }
 }
 
-/* Мобільна версія (ширина менше ніж 768px) */
+/* Основні стилі для мобільних пристроїв */
 @media (max-width: 767px) {
+    body {
+        font-family: 'Rubik Mono One', sans-serif;
+        line-height: 1.6;
+        padding: 0 10px; /* Додаємо відступи для боків */
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0; /* Зменшуємо вертикальні відступи */
+    }
+
+    .logo img {
+        width: 80%; /* Зменшуємо розмір логотипу */
+        max-width: 300px; /* Встановлюємо максимальну ширину */
+    }
 
     .site-name {
-        font-size: 30px; /* Розмір шрифту для мобільних */
-       font-family: 'PlayfairDisplay-Italic-VariableFont_wght', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7);
-    
+        font-size: 24px; /* Оптимізуємо розмір шрифту */
+        margin-top: 10px; /* Додаємо відступ зверху */
     }
+
     .nav-links {
-        flex-direction: column; /* Вертикальне меню */
-        margin-left: 0; 
-        align-items: flex-start; /* Вирівнюємо по лівому краю */
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Розтягуємо меню на всю ширину */
     }
 
     .nav-links li {
-        margin: 10px 0; /* Відступи між пунктами меню */
+        margin: 10px 0; /* Відступ між пунктами меню */
     }
 
     .search-container {
-        flex-direction: column; /* Вертикальне розташування елементів пошуку */
-        align-items: flex-start; 
-        margin-top: 10px; 
+        flex-direction: column;
+        width: 100%; /* Пошук на всю ширину */
+        align-items: stretch;
+        margin-top: 15px;
     }
 
     #searchInput {
-        width: 100%; /* Ширина пошукового поля на всю ширину */
-        margin-bottom: 10px; 
+        width: 100%; /* Ширина пошукового поля */
+        margin-bottom: 10px; /* Відступ між полем і кнопкою */
+    }
+
+    #searchButton {
+        width: 100%; /* Кнопка пошуку на всю ширину */
+    }
+
+    .hero-text {
+        padding: 20px; /* Додаємо відступи для тексту */
     }
 
     .hero-text h1 {
-        font-size: 24px; /* Менший заголовок для мобільних */
+        font-size: 22px; /* Зменшуємо розмір заголовка */
     }
 
     .hero-text p {
-        font-size: 14px; /* Менший підзаголовок для мобільних */
-    }
-
-    .registration-form {
-        width: 95%; /* Збільшуємо ширину форми на мобільних пристроях */
+        font-size: 14px; /* Зменшуємо розмір підзаголовка */
+        margin: 10px 0; /* Додаємо вертикальні відступи */
     }
 
     .cta-button {
-        font-size: 18px; /* Менший шрифт для кнопки */
+        font-size: 16px; /* Оптимізуємо розмір кнопки */
+        padding: 8px 15px;
+    }
+
+    .registration-form {
+        width: 95%; /* Збільшуємо ширину форми */
+        margin: 20px auto; /* Центруємо форму */
+    }
+
+    .styled-form input[type="text"],
+    .styled-form input[type="email"],
+    .styled-form input[type="password"] {
+        font-size: 14px; /* Зменшуємо шрифт у полях форми */
+    }
+
+    .styled-form input[type="submit"] {
+        font-size: 16px; /* Розмір кнопки реєстрації */
+    }
+
+    table {
+        font-size: 14px; /* Оптимізуємо текст у таблиці */
+    }
+
+    .nested-list ul {
+        padding-left: 10px; /* Відступ для вкладених списків */
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px; /* Відступи між елементами списку */
+    }
+
+    footer ul li a {
+        font-size: 14px; /* Зменшуємо шрифт посилань */
     }
 }
-.nested-list {
-    margin-top: 20px;
-}
-
-.nested-list ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.color-swatch {
-    display: inline-block;
-    width: 24px; /* Ширина круга */
-    height: 24px; /* Висота круга */
-    border-radius: 50%; /* Зробити коло */
-    margin-right: 8px; /* Відстань між кольоровим кругом і текстом */
-    background-size: cover; /* Щоб зображення покривало весь круг */
-    background-position: center; /* Центрування зображення */
+r; /* Центрування зображення */
 }
