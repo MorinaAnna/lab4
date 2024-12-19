@@ -206,6 +206,15 @@ th {
     list-style-type: none;
     padding-left: 0;
 }
+.color-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%; /* Робимо зображення круглим */
+    object-fit: cover;
+    vertical-align: middle;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь */
+}
 
 footer {
     background-color: #000;
@@ -229,15 +238,7 @@ footer ul li a {
     color: #fff;
     text-decoration: none;
 }
-.color-image {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 50%; /* Робимо зображення круглим */
-    object-fit: cover;
-    vertical-align: middle;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь */
-}
+
 
 /* Десктопна версія (ширина більше ніж 1024px) */
 @media (min-width: 1025px) {
